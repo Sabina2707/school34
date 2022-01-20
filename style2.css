@@ -1,0 +1,22 @@
+ul{ list-style-type: none;}
+body {
+  background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
+  Highlight: 1.5;
+}
+.left
+{float: left;
+width: 20%;
+background-color:yellow;
+margin-left:2%;
+}
+
+.right{float: left;
+width: 70%;
+line-height:1.5;
+padding-left:5%;
+display: block;
+background-color: white;
+}
+.top
+{width:100%;
+background-color:red;}

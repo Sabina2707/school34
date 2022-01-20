@@ -1,0 +1,135 @@
+.container{
+	width: 100%;
+	max-width: 1024px;
+	padding: 0 15px;
+	margin: 0 auto;
+	
+}
+.logo
+{float: left;
+}
+nav 
+{float: right;}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li 
+{display: inline-block;
+}
+/* подвал на всю страницу*/
+.container:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+nav
+{background-color: #FFE4C4;}
+
+nav a {
+	text-decoration: none;
+	line-height: 80px;
+}
+.left 
+{float: left;
+width: 30%;}
+.right 
+{float: right;
+width: 70%;}
+
+/* стиль фона с кнопками из информации*/
+body {
+  background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
+}
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+a.boot {
+  -webkit-transform: translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  color: #2d2d2d;
+  padding: 14px 24px 12px;
+  font-family: "Helvetica";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display:block;
+  width:90px;
+  margin:20px auto;
+  text-align:center;
+}
+a.boot:after {
+  padding: 0;
+  border: 2px solid #000000;
+  content: '';
+  width: 95%;
+  height: 46px;
+  display: block;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+a.boot:before {
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  -o-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  content: '';
+  width: 100%;
+  height: 60px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-left: 15px solid white;
+  box-shadow: -20px 30px 30px white;
+  background: transparent;
+  top: 0px;
+  left: -15px;
+  margin-left: -1px;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+/* кнопка в тексте*/
+ a.boot:hover:before, a.boot:active:before, a.boot:focus:before {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: translate(115%, 0);
+  -moz-transform: translate(115%, 0);
+  -ms-transform: translate(115%, 0);
+  -o-transform: translate(115%, 0);
+  transform: translate(115%, 0);
+}
